@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1 class="text-center">Bài tập quản lý sinh viên</h1>
+    </div>
+    <div class="container d-flex">
+      <select name="" id="khuVuc">
+        <option value="A">Khu vực A</option>
+        <option value="B">Khu vực B</option>
+        <option value="C">Khu vực C</option>
+        <option value="X">Khu vực X</option>
+      </select>
+      <select name="" id="doiTuong">
+        <option value="1">Đối tượng 1</option>
+        <option value="2">Đối tượng 2</option>
+        <option value="3">Đối tượng 3</option>
+        <option value="0">Đối tượng 0</option>
+      </select>
+      <div class="col">
+        <label class="form-label" for="subject1">Điểm 1</label>
+        <input class="form-control" id="subject1" type="text" />
+      </div>
+      <div class="col">
+        <label class="form-label" for="subject2">Điểm 2</label>
+        <input class="form-control" id="subject2" type="text" />
+      </div>
+      <div class="col">
+        <label class="form-label" for="subject3">Điểm 3</label>
+        <input class="form-control" id="subject3" type="text" />
+      </div>
+      <div class="col">
+        <label class="form-label" for="diemChuan">Điểm chuẩn</label>
+        <input class="form-control" id="diemChuan" type="text" />
+      </div>
+    </div>
+    <div class="text-center">
+      <button onclick="total()" class="btn btn-success mt-3">Kết quả</button>
+      <div style="display: none" id="result">
+        <span id="spanKetQua">Kết quả là</span>
+      </div>
+    </div>
+    <div class="title">
+      <h1 class="text-center">Bài tập tính Kw</h1>
+      3
+    </div>
+    <div class="container d-flex">
+      <div class="col">
+        <label class="form-label" for="name">Tên</label>
+        <input id="name" class="form-control" type="text" />
+      </div>
+      <div class="col">
+        <label class="form-label" for="Kw">Số kw</label>
+        <input id="Kw" class="form-control" type="text" />
+      </div>
+    </div>
+    <div class="container text-center mt-3">
+      <button onclick="pay()" class="btn btn-success text-center">Kết quả</button>
+    </div>
+    <div style="display: none" id="result-kw" class="result-kw text-center">
+      <span id="spanPay" >Tiên phải trả theo Kw:</span>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./bài1.js"></script>
+    <script src="./bài2.js"></script>
+  </body>
+</html>
